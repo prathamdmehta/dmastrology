@@ -2,8 +2,3 @@ fastapi
 uvicorn
 httpx
 python-dotenv
-```
-
-Create `server/Procfile`:
-```
-web: uvicorn main:app --host 0.0.0.0 --port $PORT
