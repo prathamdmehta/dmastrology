@@ -70,6 +70,9 @@ export default function ContactSection({ scrollTo }) {
             <a href={`mailto:${EMAIL}`} className="social-btn">
               <span style={{ fontSize: "1rem" }}>✉</span> {EMAIL}
             </a>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="social-btn">
+              <span style={{ fontSize: "1rem" }}>W</span> WhatsApp &nbsp;DM Astrology
+            </a>
             <a href={CHANNEL_URL} target="_blank" rel="noopener noreferrer" className="social-btn">
               <span style={{ fontSize: "1rem" }}>▶</span> YouTube &nbsp;@DMAstrology
             </a>
@@ -78,9 +81,6 @@ export default function ContactSection({ scrollTo }) {
             </a>
             <a href={FACEBOOK} target="_blank" rel="noopener noreferrer" className="social-btn">
               <span style={{ fontSize: "1rem" }}>⊞</span> Facebook &nbsp;DM Astrology
-            </a>
-            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="social-btn">
-              <span style={{ fontSize: "1rem" }}>⊞</span> WhatsApp &nbsp;DM Astrology
             </a>
           </div>
 
