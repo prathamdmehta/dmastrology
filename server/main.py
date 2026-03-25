@@ -12,7 +12,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "https://dmastrology.com/"],
+    allow_origins=["http://localhost:5173", "http://localhost:3000", "https://dmastrology.com/","https://www.dmastrology.com/", "https://dmastrology.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
