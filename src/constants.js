@@ -6,7 +6,7 @@ export const EMAIL = "jyotishdharmesh@gmail.com";
 export const WHATSAPP = "https://wa.me/919821057944";
 
 // Navigation Items
-export const NAV_ITEMS = ["Home", "Services", "Videos", "Pricing", "Blog", "Contact"];
+export const NAV_ITEMS = ["Home", "Services", "Videos", "Pricing", "Contact"];
 
 // Services Data
 export const SERVICES = [
