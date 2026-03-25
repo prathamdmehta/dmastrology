@@ -4,7 +4,6 @@ A professional full-stack astrology portfolio website built for **Dr. Dharmesh M
 
 ## 🌟 Features
 - AI-powered Vedic astrology chatbot (Claude API + FastAPI)
-- Dynamic daily blog — fresh astrological insights generated every day
 - Live contact form via Web3Forms
 - YouTube channel integration
 - Consultation pricing plans
