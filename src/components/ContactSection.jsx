@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { CHANNEL_URL, INSTAGRAM, FACEBOOK, EMAIL } from "../constants";
 
 // ✅ Paste your Web3Forms access key here
-const WEB3FORMS_ACCESS_KEY = "5e2cfc68-b60d-41cb-8fe1-05f2640b1888";
+const WEB3FORMS_ACCESS_KEY = "daa2269c-5648-48b4-bcfc-c2b463043293";
 
 export default function ContactSection({ scrollTo }) {
   const formRef = useRef();
