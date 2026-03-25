@@ -15,9 +15,9 @@ export default function PricingSection({ scrollTo }) {
         className="plans-grid"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(4,1fr)",
+          gridTemplateColumns: "repeat(5,1fr)",
           gap: "1.5rem",
-          maxWidth: 1100,
+          maxWidth: 1400,
           margin: "0 auto",
         }}
       >

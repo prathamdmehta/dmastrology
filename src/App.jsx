@@ -5,7 +5,7 @@ import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import VideosSection from "./components/VideosSection";
 import PricingSection from "./components/PricingSection";
-import BlogSection from "./components/BlogSection";
+// import BlogSection from "./components/BlogSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 
@@ -46,59 +46,59 @@ export default function App() {
 
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
-  const fetchBlog = async () => {
-    setBlogLoading(true);
-    setBlogPost(null);
-    const today = new Date().toLocaleDateString("en-IN", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
-          system:
-            "You are a Vedic astrology expert with 30 years of experience. Write rich, insightful daily astrology posts. Return ONLY valid JSON — no markdown, no backticks.",
-          messages: [
-            {
-              role: "user",
-              content: `Write a Vedic astrology daily insight for ${today}. Return ONLY a JSON object with these exact fields:
-{
-  "title": "engaging, evocative blog title",
-  "date": "${today}",
-  "intro": "2–3 sentences describing today's overall cosmic energy",
-  "planetaryFocus": "2–3 sentences about the most prominent planets today and their influence",
-  "insights": [
-    { "sign": "Aries",  "insight": "1–2 sentences of personalized guidance" },
-    { "sign": "Taurus", "insight": "1–2 sentences of personalized guidance" },
-    { "sign": "Gemini", "insight": "1–2 sentences of personalized guidance" },
-    { "sign": "Cancer", "insight": "1–2 sentences of personalized guidance" }
-  ],
-  "remedy": "A simple spiritual remedy, mantra, or ritual for today",
-  "closingThought": "One inspiring, poetic closing line"
-}`,
-            },
-          ],
-        }),
-      });
-      const data = await res.json();
-      const raw = data.content[0].text;
-      const clean = raw.replace(/```json|```/g, "").trim();
-      setBlogPost(JSON.parse(clean));
-    } catch {
-      setBlogPost({ error: true });
-    }
-    setBlogLoading(false);
-  };
+//   const fetchBlog = async () => {
+//     setBlogLoading(true);
+//     setBlogPost(null);
+//     const today = new Date().toLocaleDateString("en-IN", {
+//       weekday: "long",
+//       year: "numeric",
+//       month: "long",
+//       day: "numeric",
+//     });
+//     try {
+//       const res = await fetch("https://api.anthropic.com/v1/messages", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({
+//           model: "claude-sonnet-4-20250514",
+//           max_tokens: 1000,
+//           system:
+//             "You are a Vedic astrology expert with 30 years of experience. Write rich, insightful daily astrology posts. Return ONLY valid JSON — no markdown, no backticks.",
+//           messages: [
+//             {
+//               role: "user",
+//               content: `Write a Vedic astrology daily insight for ${today}. Return ONLY a JSON object with these exact fields:
+// {
+//   "title": "engaging, evocative blog title",
+//   "date": "${today}",
+//   "intro": "2–3 sentences describing today's overall cosmic energy",
+//   "planetaryFocus": "2–3 sentences about the most prominent planets today and their influence",
+//   "insights": [
+//     { "sign": "Aries",  "insight": "1–2 sentences of personalized guidance" },
+//     { "sign": "Taurus", "insight": "1–2 sentences of personalized guidance" },
+//     { "sign": "Gemini", "insight": "1–2 sentences of personalized guidance" },
+//     { "sign": "Cancer", "insight": "1–2 sentences of personalized guidance" }
+//   ],
+//   "remedy": "A simple spiritual remedy, mantra, or ritual for today",
+//   "closingThought": "One inspiring, poetic closing line"
+// }`,
+//             },
+//           ],
+//         }),
+//       });
+//       const data = await res.json();
+//       const raw = data.content[0].text;
+//       const clean = raw.replace(/```json|```/g, "").trim();
+//       setBlogPost(JSON.parse(clean));
+//     } catch {
+//       setBlogPost({ error: true });
+//     }
+//     setBlogLoading(false);
+//   };
 
-  useEffect(() => {
-    fetchBlog();
-  }, []);
+  // useEffect(() => {
+  //   fetchBlog();
+  // }, []);
 
   // ─── Shared style tokens ───────────────────────────────────────────
   const S = {
@@ -120,7 +120,7 @@ export default function App() {
       <ServicesSection />
       <VideosSection />
       <PricingSection scrollTo={scrollTo} />
-      <BlogSection blogPost={blogPost} blogLoading={blogLoading} fetchBlog={fetchBlog} />
+      {/* <BlogSection blogPost={blogPost} blogLoading={blogLoading} fetchBlog={fetchBlog} /> */}
       <ContactSection scrollTo={scrollTo} />
       <Footer />
     </div>
