@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { CHANNEL_URL, INSTAGRAM, FACEBOOK, EMAIL } from "../constants";
+import { CHANNEL_URL, INSTAGRAM, FACEBOOK, EMAIL, WHATSAPP } from "../constants";
 
 // ✅ Paste your Web3Forms access key here
 const WEB3FORMS_ACCESS_KEY = "daa2269c-5648-48b4-bcfc-c2b463043293";
@@ -79,6 +79,9 @@ export default function ContactSection({ scrollTo }) {
             <a href={FACEBOOK} target="_blank" rel="noopener noreferrer" className="social-btn">
               <span style={{ fontSize: "1rem" }}>⊞</span> Facebook &nbsp;DM Astrology
             </a>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="social-btn">
+              <span style={{ fontSize: "1rem" }}>⊞</span> WhatsApp &nbsp;DM Astrology
+            </a>
           </div>
 
           <div style={{ background: "rgba(212,168,67,0.04)", border: "1px solid rgba(212,168,67,0.12)", borderRadius: 10, padding: "1.3rem 1.5rem" }}>
@@ -109,6 +112,7 @@ export default function ContactSection({ scrollTo }) {
               <option style={{ background: "#040612" }}>Offline (In-Person)</option>
               <option style={{ background: "#040612" }}>On-Call</option>
               <option style={{ background: "#040612" }}>Voice Recording</option>
+              <option style={{ background: "#040612" }}>Email Consultation</option>
             </select>
           </div>
 

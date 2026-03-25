@@ -3,6 +3,7 @@ export const CHANNEL_URL = "https://www.youtube.com/@DMAstrology";
 export const INSTAGRAM = "https://www.instagram.com/dmastrology/";
 export const FACEBOOK = "https://www.facebook.com/dmastrology1/";
 export const EMAIL = "jyotishdharmesh@gmail.com";
+export const WHATSAPP = "https://wa.me/919821057944";
 
 // Navigation Items
 export const NAV_ITEMS = ["Home", "Services", "Videos", "Pricing", "Blog", "Contact"];
@@ -16,16 +17,16 @@ export const SERVICES = [
     tags: ["Zoom", "Google Meet", "Skype"],
   },
   {
-    icon: "◎",
-    title: "Offline Consultation",
-    desc: "In-person sessions at our Mumbai practice for an immersive, hands-on deep dive into your birth chart with Dr. Mehta.",
-    tags: ["In-Person", "Mumbai"],
-  },
-  {
     icon: "☊",
     title: "On-Call Consultation",
     desc: "Quick, focused phone consultations for urgent astrological queries, planetary remedies, and timely life guidance.",
     tags: ["Phone Call", "WhatsApp"],
+  },
+  {
+    icon: "✉",
+    title: "Email Consultation",
+    desc: "Send your birth details and queries over email and receive a thorough, well-structured astrological response from Dr. Mehta within 48 hours.",
+    tags: ["Email", "Async", "48hr Reply"],
   },
   {
     icon: "♪",
