@@ -108,11 +108,11 @@ export default function ContactSection({ scrollTo }) {
             <input className="contact-input" placeholder="Phone / WhatsApp" type="tel"   name="phone" />
             <select className="contact-input" name="consultation_type" defaultValue="" required>
               <option value="" disabled style={{ background: "#040612" }}>Consultation Type</option>
-              <option style={{ background: "#040612" }}>Online (Zoom / Meet)</option>
+              <option style={{ background: "#040612" }}>Recorded Consultation</option>
+              <option style={{ background: "#040612" }}>Online (Zoom / Meet / Phone / WhatsApp)</option>
               <option style={{ background: "#040612" }}>Offline (In-Person)</option>
-              <option style={{ background: "#040612" }}>On-Call</option>
-              <option style={{ background: "#040612" }}>Voice Recording</option>
               <option style={{ background: "#040612" }}>Email Consultation</option>
+              <option style={{ background: "#040612" }}>Vastu Guidance</option>
             </select>
           </div>
 
