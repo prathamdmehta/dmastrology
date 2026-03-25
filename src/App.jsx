@@ -2,12 +2,14 @@ import { useState, useEffect, useMemo } from "react";
 import { GLOBAL_CSS } from "./styles";
 import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
+import AstroChat from "./components/AstroChat";
 import ServicesSection from "./components/ServicesSection";
 import VideosSection from "./components/VideosSection";
 import PricingSection from "./components/PricingSection";
 // import BlogSection from "./components/BlogSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -117,6 +119,7 @@ export default function App() {
 
       <Navigation scrolled={scrolled} activeNav={activeNav} scrollTo={scrollTo} />
       <HeroSection scrollTo={scrollTo} stars={stars} />
+      <AstroChat />
       <ServicesSection />
       <VideosSection />
       <PricingSection scrollTo={scrollTo} />
