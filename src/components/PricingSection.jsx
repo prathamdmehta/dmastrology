@@ -70,7 +70,9 @@ export default function PricingSection({ scrollTo }) {
             >
               {plan.name}
             </h3>
-            <div style={{ textAlign: "center", marginBottom: "1.6rem" }}>
+
+            {/* ── ONLY THIS BLOCK CHANGED ── */}
+            <div style={{ textAlign: "center", marginBottom: "0.3rem" }}>
               <span
                 style={{
                   fontFamily: "'Cinzel', serif",
@@ -81,11 +83,25 @@ export default function PricingSection({ scrollTo }) {
               >
                 {plan.price}
               </span>
+              {plan.usdPrice && (
+                <span
+                  style={{
+                    display: "inline-block",
+                    marginLeft: "0.5rem",
+                    fontFamily: "'Cinzel', serif",
+                    fontSize: "1.25rem",
+                    color: "rgba(212,168,67,0.5)",
+                    fontWeight: 400,
+                  }}
+                >
+                  / {plan.usdPrice}
+                </span>
+              )}
               <span
                 style={{
                   display: "block",
-                  color: "#5A4A30",
-                  fontSize: "0.8rem",
+                  color: "#76674f",
+                  fontSize: "0.9rem",
                   fontFamily: "'Cormorant Garamond', serif",
                   fontStyle: "italic",
                   marginTop: "0.2rem",
@@ -94,6 +110,24 @@ export default function PricingSection({ scrollTo }) {
                 {plan.period}
               </span>
             </div>
+
+            {plan.usdPrice && (
+              <p style={{ textAlign: "center", color: "#8c7557", fontSize: "0.63rem", fontFamily: "'Cinzel', serif", letterSpacing: "0.08em", marginBottom: "1.4rem" }}>
+                INR · USD ACCEPTED
+              </p>
+            )}
+            {!plan.usdPrice && plan.price !== "Custom" && (
+              <p style={{ textAlign: "center", color: "#8c7557", fontSize: "0.63rem", fontFamily: "'Cinzel', serif", letterSpacing: "0.08em", marginBottom: "1.4rem" }}>
+                INDIA ONLY
+              </p>
+            )}
+            {plan.price === "Custom" && (
+              <p style={{ textAlign: "center", color: "#8c7557", fontSize: "0.63rem", fontFamily: "'Cinzel', serif", letterSpacing: "0.08em", marginBottom: "1.4rem" }}>
+                CONTACT FOR QUOTE
+              </p>
+            )}
+            {/* ── END OF CHANGED BLOCK ── */}
+
             <ul style={{ listStyle: "none", marginBottom: "1.8rem" }}>
               {plan.features.map((f) => (
                 <li
