@@ -64,7 +64,7 @@ export const VIDEOS = [
 export const PLANS = [
   {
     name: "Recorded Consultation",
-    price: "₹4000",
+    price: "₹4000 (USD 70$)",
     period: "per recording",
     features: ["Any 3 Specific area questions", "Reply by Dr. Mehta voice recording", "Remedies Advice", "Lifetime access"],
     highlight: false,
@@ -72,7 +72,7 @@ export const PLANS = [
   },
   {
     name: "On-Call",
-    price: "₹7,000",
+    price: "₹7,000 (USD 125$)",
     period: "per call",
     features: ["Real-time guidance", "Planetary remedies", "Urgent queries", "Phone / WhatsApp", "Zoom / Google Meet"],
     highlight: true,
@@ -80,7 +80,7 @@ export const PLANS = [
   },
   {
     name: "Email Consulation",
-    price: "₹1,500",
+    price: "₹1,500 (USD 30$)",
     period: "per question",
     features: ["Specific Questions like Career or Marriage", "Remedies also provided", "Full Kundali reading", "Career & relationships", "Follow-up notes"],
     highlight: false,
