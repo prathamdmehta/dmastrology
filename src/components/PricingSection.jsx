@@ -9,7 +9,7 @@ const ACCOUNT_NAME = "Dharmesh M. Mehta";
 const ACCOUNT_NO = "318102010010574";
 const IFSC = "UBIN0531693";
 const WHATSAPP_FEES = (planName) => {
-  const text = `Hi Dr. Mehta, I would like to know the fee structure for ${planName}.`;
+  const text = `Hi Dr. Mehta, I would like to know the fee structure for ${planName || 'this'}.`;
   const encodedText = encodeURIComponent(text);
   return `https://wa.me/919821057944?text=${encodedText}`;
 };
@@ -106,7 +106,7 @@ function FeeModal({ onClose }) {
         </p>
 
         <a
-          href={WHATSAPP_FEES}
+          href={WHATSAPP_FEES()}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-gold"
