@@ -123,7 +123,7 @@ export default function HeroSection({ scrollTo, stars }) {
           }}
         >
           Thirty years of illuminating life paths through the ancient wisdom of Vedic Astrology.
-          Over 5,000 Kundalis analyzed. Trusted by thousands across the globe.
+          Over 10k+ Kundalis analyzed. Trusted by thousands across the globe.
         </p>
 
         <div

@@ -109,8 +109,8 @@ export const PLANS = [
 
 // Stats
 export const STATS = [
-  ["30+", "Years Experience"],
-  ["5,000+", "Kundalis Analyzed"],
+  ["35+", "Years Experience"],
+  ["10k+", "Kundalis Analyzed"],
   ["57K+", "YouTube Subscribers"],
   ["68M+", "Video Views"],
 ];
