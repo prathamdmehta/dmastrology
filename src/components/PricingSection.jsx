@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PLANS } from "../constants";
 
 // ✅ Add your dad's payment details here
-const PAYPAL_LINK = "jyotishdharmesh@gmail.com";
+const PAYPAL_LINK = "https://paypal.me/dharmeshmehta";
 const UPI_ID = "9821057944@ybl";
 const BANK_NAME = "Union Bank of India";
 const ACCOUNT_NAME = "Dharmesh M. Mehta";
