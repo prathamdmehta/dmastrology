@@ -39,6 +39,26 @@ export const SERVICES = [
 // Videos Data
 export const VIDEOS = [
   { 
+    title: "Ketu transit Magha nakshatra results | DM Astrology", 
+    views: "3.2K",
+    url: "https://youtu.be/kHdi10_KMuY?si=OLgN2PJ2DWyp9TU1"
+  },
+  { 
+    title: "Transit Ketu in Magha Nakshatra। Expecting something unexpected | DM Astrology", 
+    views: "8.3K",
+    url: "https://youtu.be/RjiADJTTN7A?si=3S3gsFATnqzgD9sM"
+  },
+  { 
+    title: "Sun, Mars and Saturn Transit in Pisces sign l Result for all sign । DM Astrology", 
+    views: "4K",
+    url: "https://youtu.be/wOM0PWTNfQM?si=g0VaI4W-woeeYhyi"
+  },
+  { 
+    title: "सूर्य, मंगल और शनि की मीन राशि में युति और फल। डॉ. धर्मेश मेहता", 
+    views: "8K",
+    url: "https://youtu.be/2C3tnvlBydo?si=wcrKPuYoPew5sl3s"
+  },
+  { 
     title: "Mystical Marvel: Miracle Degree 29, 0 & 1 in Vedic Astrology | DM Astrology", 
     views: "188K",
     url: "https://youtu.be/E-3ohrL5NMk?si=XhG8yKRy7ldcv6kp"

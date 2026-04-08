@@ -41,7 +41,7 @@ export default function VideosSection() {
         className="videos-grid"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(4,1fr)",
+          gridTemplateColumns: "repeat(4,2fr)",
           gap: "1.5rem",
           maxWidth: 1200,
           margin: "0 auto",
